@@ -19,7 +19,7 @@ In this project you will build out a application to show the NASA photo of the d
 - You don't have any design specs to follow for this project, so you may want to start by building a basic wireframe first. Make it simple at the beginning, since you don't know what data you'll be getting back from NASA
 - Once you get the data back, there may be more than you expected, or less than you expected, so your design plans may change. That's totally fine, and very normal in the real world. Just make the proper adjustments and move forward!
 
-## Instructions
+### Instructions
 
 ### Task 1: Project Set Up
 
@@ -78,7 +78,7 @@ This project was put together using create-react-app (CRA). You will not need to
 - [x] Plan which components will hold state, what data each needs from props (if any), and where you will be making your data fetch.
 - [x] Now it's time to jump into the code!
 
-##File structure##
+## File structure ##
 
 - [?] Take a look at your planned components. Create the folders and files you need for each component.
 - [x] Leave most of them blank for now - you need to get your data from the API before you can really get these built.
