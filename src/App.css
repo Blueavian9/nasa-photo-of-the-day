@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&family=Lato&family=Oswald&family=Roboto&family=Roboto+Slab:wght@500&family=Ubuntu:ital,wght@1,700&family=Voltaire&family=Water+Brush&display=swap');
+
+>>>>>>> 55da715 (7/21/2022)
 .App {
   text-align: center;
 }
@@ -36,3 +41,20 @@
     transform: rotate(360deg);
   }
 }
+<<<<<<< HEAD
+=======
+
+/*------------IMG--------------*/
+
+.img-cointainer{
+  display: flex;
+  justify-content: left;
+}
+
+.nasa-img{
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+>>>>>>> 55da715 (7/21/2022)
