@@ -8,21 +8,9 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "react-scripts": "5.0.0"
-=======
-    "react-scripts": "^5.0.1",
-=======
-    "react-scripts": "^2.1.3",
->>>>>>> ba54fb7 (initial)
-=======
-    "react-scripts": "^5.0.1",
->>>>>>> 6b90d36 (updated package.json file and deleted package.lock.json)
     "reactstrap": "^9.0.3",
     "styled-components": "^5.3.6"
->>>>>>> c7151c5 (initial)
+
   },
   "scripts": {
     "start": "react-scripts start",
@@ -44,5 +32,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
