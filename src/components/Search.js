@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styled from "styled-components";
 
 const StyledSearch = styled.div`
@@ -7,7 +7,6 @@ const StyledSearch = styled.div`
   width: 90%;
   border-radius: 10px;
   text-align: center;
-  // height: 130px;
   color: ${(pr) => pr.theme.primaryColor};
 `;
 
@@ -49,10 +48,12 @@ let count = 1;
 
 export default function Search({ setWhatDo }) {
   const [hasSomething, setHasSomething] = useState(null);
-  const dateInput = document.getElementById("enterDateInput");
+  const dateInputRef = useRef(null);
 
   const clearInput = () => {
-    dateInput.value = "";
+    if (dateInputRef.current) {
+      dateInputRef.current.value = "";
+    }
     setHasSomething(null);
   };
 
@@ -62,17 +63,17 @@ export default function Search({ setWhatDo }) {
   };
 
   const changeThing = (evt) => {
-    const val = dateInput.value;
+    evt.preventDefault();
+    const val = dateInputRef.current.value;
 
     if (val[4] === "-" && val[7] === "-") {
-      setWhatDo(`&date=${dateInput.value}`);
+      setWhatDo(`&date=${val}`);
     }
-    evt.preventDefault();
     clearInput();
   };
 
   const inputChange = () => {
-    setHasSomething(dateInput.value);
+    setHasSomething(dateInputRef.current?.value);
   };
 
   const setRandom = () => {
@@ -94,7 +95,7 @@ export default function Search({ setWhatDo }) {
           Search Date
           <StyledInput
             type="text"
-            id="enterDateInput"
+            ref={dateInputRef}
             onChange={inputChange}
             placeholder="YYYY-MM-DD"
           />
