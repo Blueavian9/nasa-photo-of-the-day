@@ -17,7 +17,6 @@ export default function Footer() {
       <a
         href="https://github.com/jzkime/nasa-photo-of-the-day"
         rel="noreferrer"
-        target="_blank"
         alt="github repository"
       >
         <img

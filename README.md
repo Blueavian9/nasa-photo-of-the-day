@@ -159,6 +159,6 @@ Follow these steps for completing your project.
 
 
 - [X] Submit a link to your repository in Canvas.
->>>>>>> 2422772 (initial)
+## >>>>>>> 2422772 (initial)
 
 ## Part II - [Advanced Styling Techniques](DAY_TWO_README.md)

@@ -1,7 +1,6 @@
 import React from "react";
-import APOD from "./src/components/APOD";
 import ApodComp from "./ApodComp";
-import styled from "styled-component";
+import styled from "styled-components";
 
 const StyledAPOD = styled.div`
   width: 90%;
