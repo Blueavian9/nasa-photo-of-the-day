@@ -1,14 +1,16 @@
 import React from "react";
+import APOD from "./src/components/APOD";
 import ApodComp from "./ApodComp";
-import styled from "styled-components";
+import styled from "styled-component";
 
 const StyledAPOD = styled.div`
-    width: 90%
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 `;
+
 export default function APOD(props) {
   const { apodToday } = props;
   return (

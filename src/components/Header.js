@@ -20,7 +20,7 @@ const StyledHeader = styled.div`
 export default function Header() {
   return (
     <StyledHeader>
-      <a href="https://api.nasa.gov/" rel="noreferrer" target="_blank">
+      <a href="https://api.nasa.gov/" rel="noopener noreferrer" target="_blank">
         <h1 className="title">Astonomy Picture of the Day</h1>
       </a>
     </StyledHeader>
